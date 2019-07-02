@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>loginpage</title>
+<style>
+
+.box{
+width:28%;
+height:35%;
+margin: 20%;
+border:3px black color;
+border-style: solid;
+
+}
+input[type=text]{
+width:60%;}
+input[type=submit]{
+width:25%;
+height:10%;
+
+background-color:#4CAF50;
+border: none;
+color: white;}
+
+</style>
+</head>
+<body>
+<script>
+function hhh(){
+if(name=="amrutha")
+{
+document.write("login successful");}}
+</script>
+<center> 
+
+<form onsubmit="return hhh();"  style="background-color: rgb(60,60,60)" class="box" method="post" action="phpcheck.php">
+<h1 style="text-align:center;color:rgb(240,240,240)">Login</h1>
+<br>
+<input type="text" placeholder="Username" name="name" required><br><br>
+<input type="text" placeholder="Email" name="email" required><br><br>
+<input type="text" onclick="alert('7 or more characters')" placeholder="Password" name="password" required><br><br>
+<input onclick="hhh" type="submit" name="login" value="Login">
+</form>
+</center>
+</body>
+</html> 
